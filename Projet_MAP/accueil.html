@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+        crossorigin=""></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/PrefectureFrance.js"></script>
+    <script src="js/GareFrance.js"></script>
+    <script src="js/accueil_JS.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/connexion.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <button id="Login26" onclick="window.location.href='Connexion.html';" style="width:auto;">Login</button>
+    <div class="wrapper">
+        <div class="contact">
+            <h1>Paramètres de la carte</h1>
+            <div class="items">
+                <div class="item">
+                    <label for="ville">Recherchez votre adresse ou celle d'un ami ! </label>
+                    <input id="addr" placeholder="Saisissez une ville">
+                    <button id="bouttonSearch" type="button">Chercher</button>
+                    <div id="pNew">
+                        <p id="p1"></p>
+                    </div>
+                </div>
+                <div id="results"></div>
+                <div class="item">
+                    <label for="prefecture">Afficher les prefectures : </label>
+                    <input id="checkboxPrefecture" type="checkbox" name="prefecture" value="AfficherPrefecture">
+                </div>
+                <div class="item">
+                    <form>
+                        <label for="prefecture2">Rechercher une prefecture française</label>
+                        <input id="prefecture2" type="text" name="prefecture2" value="">
+                        <input id="inputValider" type="button" value="valider">
+                    </form>
+                </div>
+                <div class="item">
+                    <label for="velib">Afficher les stations de velib : </label>
+                    <input id="checkboxVelib" type="checkbox" name="velib" value="AfficherVelib">
+                </div>
+                <div class="item">
+                    <label for="gares">Afficher les 800 premières gares : </label>
+                    <input id="checkboxGares" type="checkbox" name="gares" value="AfficherGares">
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/test.css">
+  <title>Document</title>
+</head>
+<body>
+  <form action="login.php" method="post">
+    <div class="imgcontainer">
+      <img src="icon/dinosaur.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="email"><b>Adresse mail</b></label>
+      <input type="email" placeholder="exemple@gmail.com" name="email" required>
+  
+      <label for="password"><b>Mot de passe</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+  
+      <button type="submit" name="okay">Se connecter</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="window.location.href='accueil.html';" class="cancelbtn">Annuler</button>
+      <button type="button" onclick="window.location.href='Enregistrement.html';" class="registerbtn">Vous n'avez pas encore de compte ? S'enregistrer</button>
+      <span class="psw">Vous avez oublié votre <a href="#">mot de passe ?</a></span>
+    </div>
+  </form>
+</body>
+</html>

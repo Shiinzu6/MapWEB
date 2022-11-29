@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/test.css">
+  <title>Document</title>
+</head>
+<body>
+  <form action="enregistrement.php" method="post">
+    <div class="imgcontainer">
+      <img src="icon/hacker2.png" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+      <label for="email"><b>Adresse mail</b></label>
+      <input type="email" placeholder="exemple@gmail.com" name="email" required>
+
+      <label for="prenom"><b>Prenom</b></label>
+      <input type="text" placeholder="Entrez votre prénom" name="prenom" required>
+
+      <label for="nom"><b>Nom</b></label>
+      <input type="text" placeholder="Entrez votre nom" name="nom" required>
+
+      <label for="num"><b>Numéro de téléphone</b></label>
+      <input type="tel" placeholder="0690129382" name="num" pattern="^0[0-9]{9}" minlength="10" required>
+
+      <label for="uname"><b>Pseudo</b></label>
+      <input type="text" placeholder="Entrez un pseudo" name="uname" required>
+  
+      <label for="psw"><b>Mot de passe</b></label>
+      <input type="password" placeholder="Entrez votre mot de passe" name="psw" required>
+      <div class="form-group">
+        <label for="email">Gender</label>
+        <div>
+          <label for="homme" class="radio-inline"><input type="radio" name="gender" value="m" id="homme" required><b>Homme</b></label>
+          <label for="femme" class="radio-inline"><input type="radio" name="gender" value="f" id="femme" required><b>Femme</b></label>
+          <label for="autres" class="radio-inline"><input type="radio" name="gender" value="o" id="autres" required><b>Autres</b></label>
+        </div>
+      </div>
+      
+  
+      <button type="submit">Se connecter</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="window.location.href='accueil.html';" class="cancelbtn">Annuler</button>
+      <span class="psw">Vous avez oublié votre <a href="#">mot de passe ?</a></span>
+    </div>
+  </form>
+</body>
+</html>
