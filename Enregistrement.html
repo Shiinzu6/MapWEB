@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/enregistrement.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="js/enregistrement.js"></script>
+
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Page d'enregistrement</h1>
+    <div class="infoConnexion">
+
+    </div>
+    <form class="submitLoginForm" method="post">
+      <div class="container">
+        <label for="email"><b>Adresse mail</b></label>
+        <input id="email" type="email" placeholder="exemple@gmail.com" name="email" required>
+  
+        <label for="prenom"><b>Prenom</b></label>
+        <input id="prenom" type="text" placeholder="Entrez votre prénom" name="prenom" required>
+  
+        <label for="nom"><b>Nom</b></label>
+        <input id="nom" type="text" placeholder="Entrez votre nom" name="nom" required>
+  
+        <label for="num"><b>Numéro de téléphone</b></label>
+        <input id="num" type="tel" placeholder="0690129382" name="num" pattern="^0[0-9]{9}" minlength="10" required>
+  
+        <label for="uname"><b>Pseudo</b></label>
+        <input id="uname" type="text" placeholder="Entrez un pseudo" name="uname" required>
+    
+        <label for="psw"><b>Mot de passe</b></label>
+        <input id="psw" type="password" placeholder="Entrez votre mot de passe" name="psw" required>
+        
+    
+        <button type="submit">S'enregistrer</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+        </label>
+      </div>
+    </form>
+    <div class="containerBoutton">
+      <button type="button" onclick="window.location.href='Connexion.html';" class="retourbtn">Retourner à la page de connexion</button>
+      <button type="button" onclick="window.location.href='accueil.php';" class="cancelbtn">Retourner à l'accueil</button>
+    </div>
+  </div>
+</body>
+</html>

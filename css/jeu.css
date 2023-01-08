@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content:center ;
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, #43e97b, #38f9d7 100%);
+}
+
+#map{
+    height: 100%;
+    flex-grow: 1;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 1%;
+}
+
+.game{
+    width: 80%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.score{
+    display: flex;
+    flex-direction: row;
+}
+
+.timer{
+    display: flex;
+    flex-direction: row;
+}
+
+#textScore{
+    flex-grow: 0.3;
+    display: none;
+}
+
+#numScore{
+    display: none;
+}
+
+#textTimer{
+    flex-grow: 0.3;
+    display: none;
+}
+
+#numTimer{
+    flex-grow: 1;
+    display: none;
+}
+
+
+#start, #tableauScore{
+    border: solid 2px;
+    border-color: #313131;
+    color: white;
+    background-color: #313131;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#start,#restart{
+    margin-top: 20px;
+    background-color: #04AA6D;
+}
+
+#tableauScore:hover,#start:hover{
+    opacity: 0.8;
+}
+
+.wrapper{
+    color: white;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    background-color: #313131;
+    box-shadow: 0 0 15px rgba(0,0,0,0.9);
+}
+
+.description{
+    padding: 20px;
+    max-width: 40%;
+    flex-grow: 0.4;
+    display: flex;
+    flex-direction: column;
+}
+
+.regles{
+    flex-grow: 1;
+    height: 30%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.regles h2{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.reponses{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+}
+
+.submitReponse{
+    width: 80%;
+}
+
+#skip, #indice, #abandon, #restart{
+    display: none;
+    border: none;
+    border-radius: 7px;
+    width: 80%;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+#accueil{
+    font-weight: bold;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    border: none;
+    background-color: #940e0e;
+    border-radius: 7px;
+    width: 80%;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.interaction{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#reponse{
+    display: none;
+    margin-top: 5%;
+    width: 100%;
+    padding: 10px;
+}
+
+#valider{
+    font-weight: bold;
+    justify-content: center;
+    display: none;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    padding: 15px 20px;
+    margin-top: 3%;
+    cursor: pointer;
+    background-color: #04AA6D;
+}
+
+#skip{
+    font-weight: bold;
+    flex-grow: 1;
+    margin-right: 8%;
+    background-color: #eba524;
+}
+
+#indice{
+    font-weight: bold;
+    flex-grow: 1;
+    background-color: rgb(23, 66, 184);
+}
+
+#abandon{
+    font-weight: bold;
+    background-color: #940e0e;
+}
+
+.tableauScore{
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    height: 300px;
+}
+
+.infoAjout{
+    margin-top: 20px;
+    font-size: 20px;
+}

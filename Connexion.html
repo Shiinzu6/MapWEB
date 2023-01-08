@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/connexion.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="js/connexion.js"></script>
+
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Page de connexion</h1>
+    <div class="infoConnexion">
+      <p>Ceci est un test</p>
+    </div>
+    <form class="submitLoginForm" method="post">
+      <div class="container">
+        <label for="email"><b>Adresse mail</b></label>
+        <input id="email" type="email" placeholder="Saisissez votre adresse mail" required>
+    
+        <label for="password"><b>Mot de passe</b></label>
+        <input id="mdp" type="password" placeholder="Saisissez votre mot de passe" required>
+    
+        <input id="submitForm" type="submit" name="Login" value="Se connecter">
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+        </label>
+      </div>
+    </form>
+    <div class="containerBoutton">
+      <button type="button" onclick="window.location.href='accueil.php';" class="cancelbtn">Annuler</button>
+      <button type="button" onclick="window.location.href='Enregistrement.html';" class="registerbtn">Vous n'avez pas encore de compte ? S'enregistrer</button>
+    </div>
+  </div>
+</body>
+</html>
